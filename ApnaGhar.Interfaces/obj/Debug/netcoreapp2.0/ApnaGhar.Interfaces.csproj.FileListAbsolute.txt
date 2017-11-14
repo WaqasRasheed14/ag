@@ -1,0 +1,11 @@
+E:\DevVisualStudio\ApnaGhar\ApnaGhar.Interfaces\bin\Debug\netcoreapp2.0\ApnaGhar.Interfaces.deps.json
+E:\DevVisualStudio\ApnaGhar\ApnaGhar.Interfaces\bin\Debug\netcoreapp2.0\ApnaGhar.Interfaces.dll
+E:\DevVisualStudio\ApnaGhar\ApnaGhar.Interfaces\bin\Debug\netcoreapp2.0\ApnaGhar.Interfaces.pdb
+E:\DevVisualStudio\ApnaGhar\ApnaGhar.Interfaces\bin\Debug\netcoreapp2.0\ApnaGhar.DataTransferObjects.dll
+E:\DevVisualStudio\ApnaGhar\ApnaGhar.Interfaces\bin\Debug\netcoreapp2.0\ApnaGhar.DataTransferObjects.pdb
+E:\DevVisualStudio\ApnaGhar\ApnaGhar.Interfaces\obj\Debug\netcoreapp2.0\ApnaGhar.Interfaces.csprojResolveAssemblyReference.cache
+E:\DevVisualStudio\ApnaGhar\ApnaGhar.Interfaces\obj\Debug\netcoreapp2.0\ApnaGhar.Interfaces.csproj.CoreCompileInputs.cache
+E:\DevVisualStudio\ApnaGhar\ApnaGhar.Interfaces\obj\Debug\netcoreapp2.0\ApnaGhar.Interfaces.AssemblyInfoInputs.cache
+E:\DevVisualStudio\ApnaGhar\ApnaGhar.Interfaces\obj\Debug\netcoreapp2.0\ApnaGhar.Interfaces.AssemblyInfo.cs
+E:\DevVisualStudio\ApnaGhar\ApnaGhar.Interfaces\obj\Debug\netcoreapp2.0\ApnaGhar.Interfaces.dll
+E:\DevVisualStudio\ApnaGhar\ApnaGhar.Interfaces\obj\Debug\netcoreapp2.0\ApnaGhar.Interfaces.pdb
