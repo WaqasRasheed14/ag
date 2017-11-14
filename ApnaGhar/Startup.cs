@@ -9,6 +9,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Swashbuckle.AspNetCore.Swagger;
+using ApnaGhar.BusinessLogicLibrary.Session;
+using ApnaGhar.Interfaces.Session;
 
 namespace ApnaGhar
 {
@@ -44,6 +46,8 @@ namespace ApnaGhar
                         );
                 }
             );
+
+            services.AddScoped<IUserAuthenticatoin, UserAuthenticatoin>();
 
         }
 

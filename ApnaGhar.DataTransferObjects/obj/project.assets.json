@@ -673,11 +673,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "E:\\DevVisualStudio\\ApnaGhar\\ApnaGhar.DataTransferObjects\\ApnaGhar.DataTransferObjects.csproj",
+      "projectUniqueName": "E:\\DevVisualStudio\\AG_Dev\\ApnaGhar.DataTransferObjects\\ApnaGhar.DataTransferObjects.csproj",
       "projectName": "ApnaGhar.DataTransferObjects",
-      "projectPath": "E:\\DevVisualStudio\\ApnaGhar\\ApnaGhar.DataTransferObjects\\ApnaGhar.DataTransferObjects.csproj",
+      "projectPath": "E:\\DevVisualStudio\\AG_Dev\\ApnaGhar.DataTransferObjects\\ApnaGhar.DataTransferObjects.csproj",
       "packagesPath": "C:\\Users\\WaqasRasheed14\\.nuget\\packages\\",
-      "outputPath": "E:\\DevVisualStudio\\ApnaGhar\\ApnaGhar.DataTransferObjects\\obj\\",
+      "outputPath": "E:\\DevVisualStudio\\AG_Dev\\ApnaGhar.DataTransferObjects\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

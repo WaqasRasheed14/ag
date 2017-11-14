@@ -727,11 +727,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "E:\\DevVisualStudio\\ApnaGhar\\ApnaGhar.BusinessLogicLibrary\\ApnaGhar.BusinessLogicLibrary.csproj",
+      "projectUniqueName": "E:\\DevVisualStudio\\AG_Dev\\ApnaGhar.BusinessLogicLibrary\\ApnaGhar.BusinessLogicLibrary.csproj",
       "projectName": "ApnaGhar.BusinessLogicLibrary",
-      "projectPath": "E:\\DevVisualStudio\\ApnaGhar\\ApnaGhar.BusinessLogicLibrary\\ApnaGhar.BusinessLogicLibrary.csproj",
+      "projectPath": "E:\\DevVisualStudio\\AG_Dev\\ApnaGhar.BusinessLogicLibrary\\ApnaGhar.BusinessLogicLibrary.csproj",
       "packagesPath": "C:\\Users\\WaqasRasheed14\\.nuget\\packages\\",
-      "outputPath": "E:\\DevVisualStudio\\ApnaGhar\\ApnaGhar.BusinessLogicLibrary\\obj\\",
+      "outputPath": "E:\\DevVisualStudio\\AG_Dev\\ApnaGhar.BusinessLogicLibrary\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -750,14 +750,14 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "E:\\DevVisualStudio\\ApnaGhar\\ApnaGhar.DataTransferObjects\\ApnaGhar.DataTransferObjects.csproj": {
-              "projectPath": "E:\\DevVisualStudio\\ApnaGhar\\ApnaGhar.DataTransferObjects\\ApnaGhar.DataTransferObjects.csproj"
+            "E:\\DevVisualStudio\\AG_Dev\\ApnaGhar.DataTransferObjects\\ApnaGhar.DataTransferObjects.csproj": {
+              "projectPath": "E:\\DevVisualStudio\\AG_Dev\\ApnaGhar.DataTransferObjects\\ApnaGhar.DataTransferObjects.csproj"
             },
-            "E:\\DevVisualStudio\\ApnaGhar\\ApnaGhar.DataAccessLibrary\\ApnaGhar.DataAccessLibrary.csproj": {
-              "projectPath": "E:\\DevVisualStudio\\ApnaGhar\\ApnaGhar.DataAccessLibrary\\ApnaGhar.DataAccessLibrary.csproj"
+            "E:\\DevVisualStudio\\AG_Dev\\ApnaGhar.DataAccessLibrary\\ApnaGhar.DataAccessLibrary.csproj": {
+              "projectPath": "E:\\DevVisualStudio\\AG_Dev\\ApnaGhar.DataAccessLibrary\\ApnaGhar.DataAccessLibrary.csproj"
             },
-            "E:\\DevVisualStudio\\ApnaGhar\\ApnaGhar.Interfaces\\ApnaGhar.Interfaces.csproj": {
-              "projectPath": "E:\\DevVisualStudio\\ApnaGhar\\ApnaGhar.Interfaces\\ApnaGhar.Interfaces.csproj"
+            "E:\\DevVisualStudio\\AG_Dev\\ApnaGhar.Interfaces\\ApnaGhar.Interfaces.csproj": {
+              "projectPath": "E:\\DevVisualStudio\\AG_Dev\\ApnaGhar.Interfaces\\ApnaGhar.Interfaces.csproj"
             }
           }
         }

@@ -689,11 +689,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "E:\\DevVisualStudio\\ApnaGhar\\ApnaGhar.Interfaces\\ApnaGhar.Interfaces.csproj",
+      "projectUniqueName": "E:\\DevVisualStudio\\AG_Dev\\ApnaGhar.Interfaces\\ApnaGhar.Interfaces.csproj",
       "projectName": "ApnaGhar.Interfaces",
-      "projectPath": "E:\\DevVisualStudio\\ApnaGhar\\ApnaGhar.Interfaces\\ApnaGhar.Interfaces.csproj",
+      "projectPath": "E:\\DevVisualStudio\\AG_Dev\\ApnaGhar.Interfaces\\ApnaGhar.Interfaces.csproj",
       "packagesPath": "C:\\Users\\WaqasRasheed14\\.nuget\\packages\\",
-      "outputPath": "E:\\DevVisualStudio\\ApnaGhar\\ApnaGhar.Interfaces\\obj\\",
+      "outputPath": "E:\\DevVisualStudio\\AG_Dev\\ApnaGhar.Interfaces\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -712,8 +712,8 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "E:\\DevVisualStudio\\ApnaGhar\\ApnaGhar.DataTransferObjects\\ApnaGhar.DataTransferObjects.csproj": {
-              "projectPath": "E:\\DevVisualStudio\\ApnaGhar\\ApnaGhar.DataTransferObjects\\ApnaGhar.DataTransferObjects.csproj"
+            "E:\\DevVisualStudio\\AG_Dev\\ApnaGhar.DataTransferObjects\\ApnaGhar.DataTransferObjects.csproj": {
+              "projectPath": "E:\\DevVisualStudio\\AG_Dev\\ApnaGhar.DataTransferObjects\\ApnaGhar.DataTransferObjects.csproj"
             }
           }
         }

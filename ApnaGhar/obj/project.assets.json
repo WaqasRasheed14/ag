@@ -13311,11 +13311,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "E:\\DevVisualStudio\\ApnaGhar\\ApnaGhar\\ApnaGhar.csproj",
+      "projectUniqueName": "E:\\DevVisualStudio\\AG_Dev\\ApnaGhar\\ApnaGhar.csproj",
       "projectName": "ApnaGhar",
-      "projectPath": "E:\\DevVisualStudio\\ApnaGhar\\ApnaGhar\\ApnaGhar.csproj",
+      "projectPath": "E:\\DevVisualStudio\\AG_Dev\\ApnaGhar\\ApnaGhar.csproj",
       "packagesPath": "C:\\Users\\WaqasRasheed14\\.nuget\\packages\\",
-      "outputPath": "E:\\DevVisualStudio\\ApnaGhar\\ApnaGhar\\obj\\",
+      "outputPath": "E:\\DevVisualStudio\\AG_Dev\\ApnaGhar\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -13334,11 +13334,11 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "E:\\DevVisualStudio\\ApnaGhar\\ApnaGhar.BusinessLogicLibrary\\ApnaGhar.BusinessLogicLibrary.csproj": {
-              "projectPath": "E:\\DevVisualStudio\\ApnaGhar\\ApnaGhar.BusinessLogicLibrary\\ApnaGhar.BusinessLogicLibrary.csproj"
+            "E:\\DevVisualStudio\\AG_Dev\\ApnaGhar.BusinessLogicLibrary\\ApnaGhar.BusinessLogicLibrary.csproj": {
+              "projectPath": "E:\\DevVisualStudio\\AG_Dev\\ApnaGhar.BusinessLogicLibrary\\ApnaGhar.BusinessLogicLibrary.csproj"
             },
-            "E:\\DevVisualStudio\\ApnaGhar\\ApnaGhar.DataTransferObjects\\ApnaGhar.DataTransferObjects.csproj": {
-              "projectPath": "E:\\DevVisualStudio\\ApnaGhar\\ApnaGhar.DataTransferObjects\\ApnaGhar.DataTransferObjects.csproj"
+            "E:\\DevVisualStudio\\AG_Dev\\ApnaGhar.DataTransferObjects\\ApnaGhar.DataTransferObjects.csproj": {
+              "projectPath": "E:\\DevVisualStudio\\AG_Dev\\ApnaGhar.DataTransferObjects\\ApnaGhar.DataTransferObjects.csproj"
             }
           }
         }

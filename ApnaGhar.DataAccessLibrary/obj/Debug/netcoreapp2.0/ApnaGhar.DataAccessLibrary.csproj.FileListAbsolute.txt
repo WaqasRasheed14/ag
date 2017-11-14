@@ -9,3 +9,14 @@ E:\DevVisualStudio\ApnaGhar\ApnaGhar.DataAccessLibrary\obj\Debug\netcoreapp2.0\A
 E:\DevVisualStudio\ApnaGhar\ApnaGhar.DataAccessLibrary\obj\Debug\netcoreapp2.0\ApnaGhar.DataAccessLibrary.AssemblyInfo.cs
 E:\DevVisualStudio\ApnaGhar\ApnaGhar.DataAccessLibrary\obj\Debug\netcoreapp2.0\ApnaGhar.DataAccessLibrary.dll
 E:\DevVisualStudio\ApnaGhar\ApnaGhar.DataAccessLibrary\obj\Debug\netcoreapp2.0\ApnaGhar.DataAccessLibrary.pdb
+E:\DevVisualStudio\AG_Dev\ApnaGhar.DataAccessLibrary\bin\Debug\netcoreapp2.0\ApnaGhar.DataAccessLibrary.deps.json
+E:\DevVisualStudio\AG_Dev\ApnaGhar.DataAccessLibrary\bin\Debug\netcoreapp2.0\ApnaGhar.DataAccessLibrary.dll
+E:\DevVisualStudio\AG_Dev\ApnaGhar.DataAccessLibrary\bin\Debug\netcoreapp2.0\ApnaGhar.DataAccessLibrary.pdb
+E:\DevVisualStudio\AG_Dev\ApnaGhar.DataAccessLibrary\bin\Debug\netcoreapp2.0\ApnaGhar.DataTransferObjects.dll
+E:\DevVisualStudio\AG_Dev\ApnaGhar.DataAccessLibrary\bin\Debug\netcoreapp2.0\ApnaGhar.DataTransferObjects.pdb
+E:\DevVisualStudio\AG_Dev\ApnaGhar.DataAccessLibrary\obj\Debug\netcoreapp2.0\ApnaGhar.DataAccessLibrary.csprojResolveAssemblyReference.cache
+E:\DevVisualStudio\AG_Dev\ApnaGhar.DataAccessLibrary\obj\Debug\netcoreapp2.0\ApnaGhar.DataAccessLibrary.csproj.CoreCompileInputs.cache
+E:\DevVisualStudio\AG_Dev\ApnaGhar.DataAccessLibrary\obj\Debug\netcoreapp2.0\ApnaGhar.DataAccessLibrary.AssemblyInfoInputs.cache
+E:\DevVisualStudio\AG_Dev\ApnaGhar.DataAccessLibrary\obj\Debug\netcoreapp2.0\ApnaGhar.DataAccessLibrary.AssemblyInfo.cs
+E:\DevVisualStudio\AG_Dev\ApnaGhar.DataAccessLibrary\obj\Debug\netcoreapp2.0\ApnaGhar.DataAccessLibrary.dll
+E:\DevVisualStudio\AG_Dev\ApnaGhar.DataAccessLibrary\obj\Debug\netcoreapp2.0\ApnaGhar.DataAccessLibrary.pdb
