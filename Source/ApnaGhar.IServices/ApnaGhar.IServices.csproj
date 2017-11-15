@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ApnaGhar.Base\ApnaGhar.Base.csproj" />
+    <ProjectReference Include="..\ApnaGhar.Models\ApnaGhar.Models.csproj" />
+  </ItemGroup>
+
+</Project>
