@@ -11,44 +11,15 @@ using System;
 namespace ApnaGhar.Web.Api.Migrations
 {
     [DbContext(typeof(AppDBContext))]
-    partial class AppDBContextModelSnapshot : ModelSnapshot
+    [Migration("20171125063807_Init4")]
+    partial class Init4
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
                 .HasAnnotation("ProductVersion", "2.0.1-rtm-125")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-            modelBuilder.Entity("ApnaGhar.Models.Lookups.LookupCity", b =>
-                {
-                    b.Property<int>("CityID")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<string>("CityDesc");
-
-                    b.Property<string>("CityName");
-
-                    b.Property<DateTime>("CreatedAt")
-                        .ValueGeneratedOnAdd()
-                        .HasDefaultValue(new DateTime(2017, 11, 26, 19, 22, 16, 582, DateTimeKind.Local));
-
-                    b.Property<int>("CreatedBy");
-
-                    b.Property<DateTime>("ModifiedAt")
-                        .ValueGeneratedOnAdd()
-                        .HasDefaultValue(new DateTime(2017, 11, 26, 19, 22, 16, 589, DateTimeKind.Local));
-
-                    b.Property<int>("ModifiedBy");
-
-                    b.Property<int>("StateID");
-
-                    b.HasKey("CityID");
-
-                    b.HasIndex("StateID");
-
-                    b.ToTable("LookupCity");
-                });
 
             modelBuilder.Entity("ApnaGhar.Models.Lookups.LookupContinent", b =>
                 {
@@ -58,14 +29,6 @@ namespace ApnaGhar.Web.Api.Migrations
                     b.Property<string>("CountryDesc");
 
                     b.Property<string>("CountryName");
-
-                    b.Property<DateTime>("CreatedAt");
-
-                    b.Property<int>("CreatedBy");
-
-                    b.Property<DateTime>("ModifiedAt");
-
-                    b.Property<int>("ModifiedBy");
 
                     b.HasKey("ContinentID");
 
@@ -77,8 +40,6 @@ namespace ApnaGhar.Web.Api.Migrations
                     b.Property<int>("CountryID")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<int>("ContinentID");
-
                     b.Property<string>("CountryDesc");
 
                     b.Property<string>("CountryName");
@@ -87,41 +48,31 @@ namespace ApnaGhar.Web.Api.Migrations
 
                     b.Property<int>("CreatedBy");
 
+                    b.Property<int>("LookupContinent");
+
                     b.Property<DateTime>("ModifiedAt");
 
                     b.Property<int>("ModifiedBy");
 
                     b.HasKey("CountryID");
 
-                    b.HasIndex("ContinentID");
-
                     b.ToTable("LookupCountry");
                 });
 
-            modelBuilder.Entity("ApnaGhar.Models.Lookups.LookupState", b =>
+            modelBuilder.Entity("ApnaGhar.Models.Property", b =>
                 {
-                    b.Property<int>("StateID")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<int>("CountryID");
+                    b.Property<DateTime>("DatePosted");
 
-                    b.Property<DateTime>("CreatedAt");
+                    b.Property<string>("Description");
 
-                    b.Property<int>("CreatedBy");
+                    b.Property<string>("Name");
 
-                    b.Property<DateTime>("ModifiedAt");
+                    b.HasKey("Id");
 
-                    b.Property<int>("ModifiedBy");
-
-                    b.Property<string>("StateDesc");
-
-                    b.Property<string>("StateName");
-
-                    b.HasKey("StateID");
-
-                    b.HasIndex("CountryID");
-
-                    b.ToTable("LookupState");
+                    b.ToTable("Properties");
                 });
 
             modelBuilder.Entity("ApnaGhar.Models.Session.LookupLoginChannels", b =>
@@ -183,30 +134,6 @@ namespace ApnaGhar.Web.Api.Migrations
                     b.HasKey("LoginChannelID", "UserID");
 
                     b.ToTable("UserLoginChannels");
-                });
-
-            modelBuilder.Entity("ApnaGhar.Models.Lookups.LookupCity", b =>
-                {
-                    b.HasOne("ApnaGhar.Models.Lookups.LookupState")
-                        .WithMany("LookupCity")
-                        .HasForeignKey("StateID")
-                        .OnDelete(DeleteBehavior.Cascade);
-                });
-
-            modelBuilder.Entity("ApnaGhar.Models.Lookups.LookupCountry", b =>
-                {
-                    b.HasOne("ApnaGhar.Models.Lookups.LookupContinent")
-                        .WithMany("LookupCountry")
-                        .HasForeignKey("ContinentID")
-                        .OnDelete(DeleteBehavior.Cascade);
-                });
-
-            modelBuilder.Entity("ApnaGhar.Models.Lookups.LookupState", b =>
-                {
-                    b.HasOne("ApnaGhar.Models.Lookups.LookupCountry")
-                        .WithMany("LookupState")
-                        .HasForeignKey("CountryID")
-                        .OnDelete(DeleteBehavior.Cascade);
                 });
 #pragma warning restore 612, 618
         }

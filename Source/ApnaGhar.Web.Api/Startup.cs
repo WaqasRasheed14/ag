@@ -53,6 +53,7 @@ namespace ApnaGhar.Web.Api
 
             // register services
             services.AddTransient<IPropertyService, PropertyService>();
+            services.AddTransient<IUserService, UserService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -198,3 +198,4 @@ ModelManifest.xml
 **/[Oo]bj/**
 
 .vscode/
+.vs/

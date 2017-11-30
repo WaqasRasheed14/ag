@@ -11,9 +11,10 @@ using System;
 namespace ApnaGhar.Web.Api.Migrations
 {
     [DbContext(typeof(AppDBContext))]
-    partial class AppDBContextModelSnapshot : ModelSnapshot
+    [Migration("20171126095506_Init_CheckRelations2")]
+    partial class Init_CheckRelations2
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -29,15 +30,11 @@ namespace ApnaGhar.Web.Api.Migrations
 
                     b.Property<string>("CityName");
 
-                    b.Property<DateTime>("CreatedAt")
-                        .ValueGeneratedOnAdd()
-                        .HasDefaultValue(new DateTime(2017, 11, 26, 19, 22, 16, 582, DateTimeKind.Local));
+                    b.Property<DateTime>("CreatedAt");
 
                     b.Property<int>("CreatedBy");
 
-                    b.Property<DateTime>("ModifiedAt")
-                        .ValueGeneratedOnAdd()
-                        .HasDefaultValue(new DateTime(2017, 11, 26, 19, 22, 16, 589, DateTimeKind.Local));
+                    b.Property<DateTime>("ModifiedAt");
 
                     b.Property<int>("ModifiedBy");
 
@@ -122,54 +119,6 @@ namespace ApnaGhar.Web.Api.Migrations
                     b.HasIndex("CountryID");
 
                     b.ToTable("LookupState");
-                });
-
-            modelBuilder.Entity("ApnaGhar.Models.Session.LookupLoginChannels", b =>
-                {
-                    b.Property<int>("LoginChannelID")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<string>("ChannelDescription");
-
-                    b.Property<string>("ChannelName");
-
-                    b.HasKey("LoginChannelID");
-
-                    b.ToTable("LookupLoginChannels");
-                });
-
-            modelBuilder.Entity("ApnaGhar.Models.Session.User", b =>
-                {
-                    b.Property<int>("UserID")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<string>("AboutMe");
-
-                    b.Property<DateTime>("CreatedAt");
-
-                    b.Property<int>("CreatedBy");
-
-                    b.Property<DateTime>("DateOfBirth");
-
-                    b.Property<string>("EmailAddress");
-
-                    b.Property<string>("FirstName");
-
-                    b.Property<byte>("Gender");
-
-                    b.Property<string>("HashedPassword");
-
-                    b.Property<string>("LastName");
-
-                    b.Property<DateTime>("ModifiedAt");
-
-                    b.Property<int>("ModifiedBy");
-
-                    b.Property<string>("Username");
-
-                    b.HasKey("UserID");
-
-                    b.ToTable("User");
                 });
 
             modelBuilder.Entity("ApnaGhar.Models.Session.UserLoginChannels", b =>
