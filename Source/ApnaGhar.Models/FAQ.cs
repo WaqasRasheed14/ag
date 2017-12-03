@@ -14,7 +14,7 @@ namespace ApnaGhar.Models
         public string QuestionText { get; set; }
         public string Answer { get; set; }
         [ForeignKey("FAQCategory")]
-        public int FAQCategoryID { get; set; }
+        public int FAQCategoryID { get; set; }        
 
     }
 
@@ -22,8 +22,9 @@ namespace ApnaGhar.Models
     {
         [Key]
         public int FAQCategoryID { get; set; }
-        public int FAQCategoryName { get; set; }
-        public int FAQCategoryDescription { get; set; }
+        public string FAQCategoryName { get; set; }
+        public string FAQCategoryDescription { get; set; }
+        public ICollection<FAQ> FAQ { get; set; }
 
     }
 }

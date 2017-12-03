@@ -11,9 +11,10 @@ using System;
 namespace ApnaGhar.Web.Api.Migrations
 {
     [DbContext(typeof(AppDBContext))]
-    partial class AppDBContextModelSnapshot : ModelSnapshot
+    [Migration("20171203062355_listingModels")]
+    partial class listingModels
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -284,7 +285,7 @@ namespace ApnaGhar.Web.Api.Migrations
 
                     b.Property<DateTime>("ModifiedAt")
                         .ValueGeneratedOnAdd()
-                        .HasDefaultValue(new DateTime(2017, 12, 3, 14, 42, 51, 476, DateTimeKind.Local));
+                        .HasDefaultValue(new DateTime(2017, 12, 3, 14, 23, 54, 156, DateTimeKind.Local));
 
                     b.Property<int>("StateID");
 
@@ -445,11 +446,6 @@ namespace ApnaGhar.Web.Api.Migrations
                     b.HasOne("ApnaGhar.Models.Listings.FacilitiesLookup")
                         .WithMany("ListingFacilitiess")
                         .HasForeignKey("FacilitiesLookupID")
-                        .OnDelete(DeleteBehavior.Cascade);
-
-                    b.HasOne("ApnaGhar.Models.Listings.Listing")
-                        .WithMany("ListingFacilities")
-                        .HasForeignKey("ListingID")
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 

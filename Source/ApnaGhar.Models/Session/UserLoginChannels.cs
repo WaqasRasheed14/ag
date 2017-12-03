@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ApnaGhar.Models.BaseModels;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -6,7 +7,7 @@ using System.Text;
 
 namespace ApnaGhar.Models.Session
 {
-    public class UserLoginChannels
+    public class UserLoginChannels: BaseModel
     {
         [ForeignKey("User")] 
         [Column(Order = 1)]
@@ -14,7 +15,6 @@ namespace ApnaGhar.Models.Session
 
         [ForeignKey("LookupLoginChannels")] 
         [Column(Order = 2)]
-        public int LoginChannelID { get; set; }
-        public DateTime CreatedAt { get; set; }
+        public int LoginChannelID { get; set; }        
     }
 }

@@ -54,6 +54,9 @@ namespace ApnaGhar.Web.Api
             // register services
             services.AddTransient<IPropertyService, PropertyService>();
             services.AddTransient<IUserService, UserService>();
+            //services.AddTransient<IFAQService, FAQService>();
+            services.AddTransient<IFAQCategoryService, FAQCategoryService>();
+            services.AddTransient<IListingService, ListingService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -68,7 +71,7 @@ namespace ApnaGhar.Web.Api
             app.UseSwaggerUI(c => { c.SwaggerEndpoint("/swagger/v1/swagger.json", "Test API V1"); });
 
             app.UseMvc();
-            DbContextExtension.SeedData(context);
+            //DbContextExtension.SeedData(context);
 
         }
     }

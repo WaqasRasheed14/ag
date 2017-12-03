@@ -5,6 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="IFAQService.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\ApnaGhar.Base\ApnaGhar.Base.csproj" />
     <ProjectReference Include="..\ApnaGhar.Models\ApnaGhar.Models.csproj" />
   </ItemGroup>

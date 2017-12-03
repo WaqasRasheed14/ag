@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using ApnaGhar.IServices;
 using ApnaGhar.Models.Session;
 
@@ -22,19 +17,19 @@ namespace ApnaGhar.Web.Api.Controllers
         [Route("loginuser")]
         public User LoginUser([FromBody]User userCred )
         {
-            return new User() {
-                Username ="Waqas",
-                HashedPassword ="dasjkdhashdasd54dd6ss6d67qwee",
-                FirstName="Waqas",
-                LastName="Rasheed",
-                ModifiedAt=DateTime.Now
-            };
-            //return _userService.Find(s => s.HashedPassword == userCred.HashedPassword && s.Username == userCred.Username);
+            return _userService.Find(s => s.HashedPassword == userCred.HashedPassword && s.Username == userCred.Username);
         }
         [HttpGet]
         public User GetAll()
         {
             return null;// _userService.Find(s => s.HashedPassword == userCred.HashedPassword && s.Username == userCred.Username);
+        }
+
+        [HttpPost]
+        [Route("signupuser")]
+        public User SignupUser([FromBody]User userData)
+        {
+            return _userService.Add(userData);
         }
     }
 }

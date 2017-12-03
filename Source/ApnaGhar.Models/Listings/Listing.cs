@@ -12,15 +12,21 @@ namespace ApnaGhar.Models.Listings
         [Key]
         public int ListingID { get; set; }
 
-        [ForeignKey("ListingTypeID")]
-        public ListingType ListingType { get; set; }
-        [ForeignKey("CurrencyTypeID")]
-        public CurrencyType CurrencyType { get; set; }
-        public ICollection<ListingSpecifications> ListingSpecificationss { get; set; }
-        public ICollection<ListingFurnishing> ListingFurnishings { get; set; }
-        public ICollection<ListingAvailability> ListingAvailabilitys { get; set; }
+        [ForeignKey("ListingType")]
+        public int ListingTypeID { get; set; }
+        [ForeignKey("CurrencyType")]
+        public int CurrencyTypeID { get; set; }
+        public int Price { get; set; }
+        public bool IsNegotiable { get; set; }
+        public string Title { get; set; }
+        public string Discription { get; set; }
+        public string SizeMeasurement { get; set; }
+        public ICollection<ListingSpecifications> ListingSpecifications { get; set; }
+        public ICollection<ListingFurnishing> ListingFurnishing { get; set; }
+        public ICollection<ListingAvailability> ListingAvailability { get; set; }
         public ICollection<ListingLandmark> ListingLandmarks { get; set; }
-        
+        public ICollection<ListingFacilities> ListingFacilities { get; set; }
+
     }
    
     public class ListingTypeCategory : BaseModel
@@ -34,8 +40,8 @@ namespace ApnaGhar.Models.Listings
     {
         [Key]
         public int ListingTypeID { get; set; }
-        [ForeignKey("ListingTypeCategoryID")]
-        public ListingTypeCategory ListingTypeCategory { get; set; }
+        [ForeignKey("ListingTypeCategory")]
+        public int ListingTypeCategoryID { get; set; }
 
         public string ListingTypeName { get; set; }
         public string ListingTypeDescription { get; set; }
@@ -60,34 +66,32 @@ namespace ApnaGhar.Models.Listings
         public ICollection<ListingFacilities> ListingFacilitiess { get; set; }
     }
 
-    public class ListingFacilities
+    public class ListingFacilities : BaseModel
     {
-        [ForeignKey("FacilitiesLookupID")]
+        [ForeignKey("FacilitiesLookup")]
         [Column(Order = 1)]
-        public FacilitiesLookup FacilitiesLookup { get; set; }
+        public int FacilitiesLookupID { get; set; }
         [ForeignKey("ListingID")]
         [Column(Order = 1)]
-        public Listing Listing { get; set; }
-        public DateTime ModifiedDate { get; set; }
+        public int ListingID { get; set; }
     }
-    public class SpecificationLookup
+    public class SpecificationLookup : BaseModel
     {
         [Key]
         public int SpecificationLookupID { get; set; }
         public string SpecificationKey { get; set; }
         public string SpecificationKeyDescription { get; set; }
-        public DateTime ModifiedDate { get; set; }
         public ICollection<ListingSpecifications> ListingSpecificationss { get; set; }        
     }
 
-    public class ListingSpecifications
+    public class ListingSpecifications : BaseModel
     {
-        [ForeignKey("SpecificationLookupID")]
+        [ForeignKey("SpecificationLookup")]
         [Column(Order = 1)]
-        public SpecificationLookup SpecificationLookup { get; set; }
+        public int SpecificationLookupID { get; set; }
         [ForeignKey("Listing")]
         [Column(Order =1)]
-        public Listing Listing { get; set; }
+        public int ListingID { get; set; }
     }
 
     public class LookupFurnishing
@@ -100,15 +104,15 @@ namespace ApnaGhar.Models.Listings
         public ICollection<ListingFurnishing> ListingFurnishing { get; set; }
     }
 
-    public class ListingFurnishing
+    public class ListingFurnishing : BaseModel
     {
-        [ForeignKey("ListingID")]
+        [ForeignKey("Listing")]
         [Column(Order = 1)]
-        public Listing Listing { get; set; }
+        public int ListingID { get; set; }
 
         [ForeignKey("LookupFurnishing")]
         [Column(Order = 2)]
-        public LookupFurnishing LookupFurnishing { get; set; }
+        public int LookupFurnishingID { get; set; }
     }
 
     public class LookupAvailibility
@@ -118,17 +122,17 @@ namespace ApnaGhar.Models.Listings
         public string AvailibilityName { get; set; }
         public string AvailibilityDescription { get; set; }
         public DateTime ModifiedDate { get; set; }
-        public ICollection<ListingFurnishing> ListingFurnishing { get; set; }
+        public ICollection<ListingAvailability> ListingAvailability { get; set; }
     }   
     public class ListingAvailability
     {
-        [ForeignKey("ListingID")]
+        [ForeignKey("Listing")]
         [Column(Order = 1)]
-        public Listing Listing { get; set; }
+        public int ListingID { get; set; }
 
         [ForeignKey("LookupAvailibility")]
         [Column(Order = 2)]
-        public LookupAvailibility LookupAvailibility { get; set; }
+        public int LookupAvailibilityID { get; set; }
         public DateTime ModifiedDate { get; set; }
     }
 
@@ -143,14 +147,13 @@ namespace ApnaGhar.Models.Listings
     }
     public class ListingLandmark
     {
-        [ForeignKey("ListingID")]
+        [ForeignKey("Listing")]
         [Column(Order = 1)]
-        public Listing Listing { get; set; }
+        public int ListingID { get; set; }
 
-        [ForeignKey("LookupLandmark" +
-            "ID")]
+        [ForeignKey("LookupLandmark")]
         [Column(Order = 2)]
-        public LookupLandmark LookupLandmark { get; set; }
+        public int LookupLandmarkID { get; set; }
         public DateTime ModifiedDate { get; set; }
     }   
 
